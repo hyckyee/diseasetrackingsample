@@ -1,0 +1,10 @@
+import numpy as np
+import scipy.stats as stats
+
+n = 1000  # 총 인구
+p = 0.1   # 감염 확률
+k = 150   # 감염된 인원 수
+
+# 이항 확률 계산
+prob = stats.binom.pmf(k, n, p)
+print(f"150명이 감염될 확률: {prob:.4f}")
